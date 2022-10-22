@@ -8,7 +8,7 @@ import anything.world.blocks.UnitBlock;
 
 public class WhateverBlocks{
     
-    public static Seq<Bind<UnitBlock>> binds = new Seq<Bind<UnitBlock>>()
+    public static Seq<Bind<UnitBlock>> binds = new Seq<Bind<UnitBlock>>();
     
     public static void load(){
         Vars.content.units().each(u -> {
