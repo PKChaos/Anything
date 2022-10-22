@@ -1,5 +1,6 @@
 package anything
 
+import arc.*
 import mindustry.game.EventType.*
 import mindustry.mod.*
 import anything.classpathing.*
