@@ -12,7 +12,7 @@ public class WhateverBlocks{
     
     public static void load(){
         Vars.content.units().each(u -> {
-            binds.add(new UnitBlock(u));
+            binds.add(new Bind<UnitBlock>(new UnitBlock(u)));
         });
     }
 }
