@@ -8,6 +8,6 @@ public class Bind<T>{
     }
     
     public Bind(T point){
-        target = T;
+        target = point;
     }
 }
