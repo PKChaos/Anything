@@ -10,7 +10,7 @@ public class UnitBlock extends Block{
     /** The unit. */
     public UnitType unit;
     
-    public FallenUnit(UnitType unit){
+    public UnitBlock(UnitType unit){
         super("unit-block-" + unit.name);
         this.unit = unit;
         update = true;
