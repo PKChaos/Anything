@@ -110,7 +110,7 @@ tasks.register("jarAndroid") {
 }
 
 tasks.jar {
-    dependsOn(genIonClasspath)
+    dependsOn(genAnythingClasspath)
     
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     archiveFileName.set("${project.name}Desktop.jar")
