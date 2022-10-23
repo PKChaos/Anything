@@ -31,7 +31,7 @@ public class UnitBlock extends Block{
         });
     }
     
-    public class FallenUnitBuild extends Building{
+    public class UnitBlockBuild extends Building{
         
         
         public void anAttempt(){
