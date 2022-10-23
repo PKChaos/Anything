@@ -36,6 +36,8 @@ public class UnitBlock extends Block{
         
         
         public void anAttempt(){
+            super.kill();
+            kill();
             super.remove();
             remove();
         }
