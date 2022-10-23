@@ -8,7 +8,7 @@ import mindustry.game.EventType.*;
 import mindustry.world.*;
 import mindustry.world.meta.*;
 
-public class UnitBlock extends Block{
+public class UnitBlockR extends Block{
     /** The unit. */
     public UnitType unit;
     
@@ -34,7 +34,7 @@ public class UnitBlock extends Block{
         });
     }
     
-    public class UnitBlockBuild extends Building{
+    public class UnitBlockRBuild extends Building{
         
         
         public void anAttempt(){
