@@ -33,12 +33,25 @@ public class UnitBlock extends Block{
     
     public class FallenUnitBuild extends Building{
         
+        
+        public void anAttempt(){
+            super.kill();
+            kill();
+            super.remove();
+            remove();
+        }
+        
         @Override
         public void placed(){
             super.placed();
-            super.remove();
+            anAttempt();
             
             unit.spawn(team, x, y);
+        }
+        
+        @Override
+        public void updateTile(){
+            anAttempt();
         }
     }
 }
