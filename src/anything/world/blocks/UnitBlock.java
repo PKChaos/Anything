@@ -1,6 +1,7 @@
 package anything.world.blocks;
 
 import arc.*;
+import arc.math.*;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.game.EventType.*;
@@ -35,8 +36,6 @@ public class UnitBlock extends Block{
         
         
         public void anAttempt(){
-            super.kill();
-            kill();
             super.remove();
             remove();
         }
@@ -46,7 +45,7 @@ public class UnitBlock extends Block{
             super.placed();
             anAttempt();
             
-            unit.spawn(team, x, y);
+            unit.spawn(team, x + Mathf.range(5f), y + Mathf.range(5f));
         }
         
         @Override
