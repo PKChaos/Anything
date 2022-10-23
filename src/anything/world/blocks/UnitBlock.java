@@ -12,6 +12,8 @@ public class UnitBlock extends Block{
     /** The unit. */
     public UnitType unit;
     
+    public static boolean yeet = false;
+    
     public UnitBlock(UnitType unit){
         super("unit-block-" + unit.name);
         this.unit = unit;
@@ -47,7 +49,9 @@ public class UnitBlock extends Block{
             super.placed();
             anAttempt();
             
-            unit.spawn(team, x + Mathf.range(5f), y + Mathf.range(5f));
+            Unit mus = unit.spawn(team, x + Mathf.range(5f), y + Mathf.range(5f));
+            mus.rotation = Mathf.random(360f);
+            if(yeet) mus.vel.add(Mathf.random(360f), Mathf.random(360f));
         }
         
         @Override
