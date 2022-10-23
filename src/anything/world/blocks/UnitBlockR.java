@@ -21,6 +21,8 @@ public class UnitBlockR extends Block{
         solid = true;
         destructible = true;
         hasShadow = false;
+        rebuildable = false;
+        createRubble = false;
         buildVisibility = BuildVisibility.shown;
         category = Category.units;
     }
