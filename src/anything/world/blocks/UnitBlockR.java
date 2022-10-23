@@ -14,7 +14,7 @@ public class UnitBlockR extends Block{
     
     public static boolean yeet = false;
     
-    public UnitBlock(UnitType unit){
+    public UnitBlockR(UnitType unit){
         super("unit-block-" + unit.name);
         this.unit = unit;
         update = true;
