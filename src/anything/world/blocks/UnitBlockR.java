@@ -8,6 +8,7 @@ import mindustry.game.EventType.*;
 import mindustry.world.*;
 import mindustry.world.meta.*;
 
+/** A block that becomes a unit when placed. */
 public class UnitBlockR extends Block{
     /** The unit. */
     public UnitType unit;
