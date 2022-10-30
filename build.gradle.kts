@@ -23,7 +23,7 @@ sourceSets {
 dependencies {
     compileOnly("com.github.Anuken.Arc:arc-core:$mindustryVersion")
     compileOnly("com.github.Anuken.Arc:flabel:$mindustryVersion")
-    compileOnly("com.github.Anuken.Mindustry:core:$mindustryVersion")
+    compileOnly("com.github.Anuken.MindustryJitpack:core:$mindustryVersion")
 }
 
 java {

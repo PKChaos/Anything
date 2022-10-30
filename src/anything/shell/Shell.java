@@ -20,7 +20,7 @@ public class Shell{
 
         //then close the stream
         procO.close();
-        
+
         BufferedReader res = new BufferedReader(new InputStreamReader(procI));
         return res.lines().parallel().collect(Collectors.joining("\n"));
     }
