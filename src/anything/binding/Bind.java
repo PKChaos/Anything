@@ -3,7 +3,7 @@ package anything.binding;
 import arc.struct.*;
 
 public class Bind<T>{
-    private T target = null;
+    private T target;
     
     public Bind(){
         this(null);
