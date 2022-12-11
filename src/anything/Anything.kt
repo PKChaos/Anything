@@ -5,11 +5,12 @@ import mindustry.game.EventType.*
 import mindustry.mod.*
 import anything.content.*
 import anything.classpathing.*
+import com.github.smol.kotmindy.arc.events.*
 
 class Anything : Mod(){
 
     init{
-        Events.on(ClientLoadEvent::class.java){
+        listen<ClientLoadEvent>{
             AnyClassGateway().load()
         }
     }

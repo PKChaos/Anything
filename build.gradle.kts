@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm") version "1.7.20-Beta"
 }
 
-val mindustryVersion = "v139"
+val mindustryVersion = "v140"
 repositories {
     mavenCentral()
     maven("https://jitpack.io")
@@ -22,8 +22,10 @@ sourceSets {
 
 dependencies {
     compileOnly("com.github.Anuken.Arc:arc-core:$mindustryVersion")
-    compileOnly("com.github.Anuken.Arc:flabel:$mindustryVersion")
-    compileOnly("com.github.Anuken.MindustryJitpack:core:$mindustryVersion")
+    //compileOnly("com.github.Anuken.Arc:flabel:$mindustryVersion")
+    compileOnly("com.github.Anuken.Mindustry:core:$mindustryVersion")
+    
+    implementation("com.github.SMOLKEYS:kotmindy:v0.2")
 }
 
 java {
