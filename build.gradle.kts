@@ -2,7 +2,7 @@ import java.io.ByteArrayOutputStream
 
 version = "1.0"
 plugins {
-    kotlin("jvm") version "1.7.20-Beta"
+    kotlin("jvm") version "1.8.0"
 }
 
 val mindustryVersion = "v140"
